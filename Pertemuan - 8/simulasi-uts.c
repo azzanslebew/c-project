@@ -96,12 +96,12 @@ int main()
     total_biaya = subtotal - diskon;
 
     printf("\n--- RINCIAN BIAYA LAUNDRY ---\n");
-    printf("Biaya Pokok Cuci        : Rp %10.2f\n", biaya_pokok);
-    printf("Biaya Tambahan          : Rp %10.2f\n", biaya_tambahan);
-    printf("Subtotal                : Rp %10.2f\n", subtotal);
-    printf("Diskon (%.0f%%)             : Rp %10.2f\n", persen_diskon * 100.00, diskon);
+    printf("Biaya Pokok Cuci        : Rp %.2f\n", biaya_pokok);
+    printf("Biaya Tambahan          : Rp %.2f\n", biaya_tambahan);
+    printf("Subtotal                : Rp %.2f\n", subtotal);
+    printf("Diskon (%.0f%%)            : Rp %.2f\n", persen_diskon * 100.00, diskon);
     printf("-------------------------------------\n");
-    printf("Total Bayar             : Rp %10.2f\n", total_biaya);
+    printf("Total Bayar             : Rp %.2f\n", total_biaya);
 
     return 0;
 }
