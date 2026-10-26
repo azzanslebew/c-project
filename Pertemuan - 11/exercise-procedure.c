@@ -20,9 +20,9 @@ void multiplication(int a, int b)
 
 int main()
 {
-    addition(5, 3);
-    subtraction(10, 4);
-    multiplication(6, 7);
+    addition(6, 4);
+    subtraction(11, 5);
+    multiplication(3, 2);
 
     return 0;
 }
