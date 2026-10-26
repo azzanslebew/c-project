@@ -14,7 +14,7 @@ int main()
         {
             price_per_sheets = 150;
         }
-        else if (total_sheets >= 100 && total_sheets < 300)
+        else if (total_sheets < 300)
         {
             price_per_sheets = 120;
         }
