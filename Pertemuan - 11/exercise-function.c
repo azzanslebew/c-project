@@ -20,15 +20,13 @@ int multiplication(int a, int b)
 
 int main()
 {
-    int a = 5, b = 3;
-
-    int addition_result = addition(a, b);
+    int addition_result = addition(5, 3);
     printf("Hasil penjumlahan adalah: %d\n", addition_result);
 
-    int subtraction_result = subtraction(a, b);
+    int subtraction_result = subtraction(10, 4);
     printf("Hasil pengurangan adalah: %d\n", subtraction_result);
 
-    int multiplication_result = multiplication(a, b);
+    int multiplication_result = multiplication(6, 7);
     printf("Hasil perkalian adalah: %d\n", multiplication_result);
 
     return 0;
