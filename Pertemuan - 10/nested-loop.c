@@ -1,16 +1,13 @@
 #include <stdio.h>
-
 int main()
 {
-    for (int i = 0; i < 3; i++)
+    for (int i = 1; i <= 3; i++)
     {
-        for (int j = 0; j <= 1; j++)
+        for (int j = 1; j <= 2; j++)
         {
-            printf("%d ", j);
+            printf("i=%d j=%d \n", i, j);
         }
-        printf("\n");
     }
-
     int rows = 4, cols = 6;
     for (int i = 1; i <= rows; i++)
     {

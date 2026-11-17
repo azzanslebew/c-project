@@ -55,7 +55,7 @@ int main()
 
     printf("Masukkan uang pembayaran (Rp)   : ");
     scanf("%d", &uang_pembayaran);
-
+    
     printf("\n=============================================\n");
     printf("               RINCIAN TRANSAKSI");
     printf("\n=============================================\n");
