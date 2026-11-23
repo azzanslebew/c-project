@@ -59,21 +59,27 @@ int main()
 
     // Memanggil fungsi untuk menghitung total biaya tiket dengan promo
     totalBiaya = hitungTotal(jumlahTiket, hargaSatuan);
-
-    printf("Total biaya (Promo Beli 4+ Diskon Rp15000): Rp %d\n", totalBiaya);
-
-    printf("\nMasukkan uang dibayarkan: Rp ");
-    scanf("%d", &uangBayar);
-
-    // Looping untuk memastikan uang yang dibayarkan cukup
-    while (uangBayar < totalBiaya)
+    if (jumlahTiket >= 4)
     {
-        kurang = totalBiaya - uangBayar;
-        printf("Error: Uang tidak cukup! Kurang Rp %d. Silahkan masukkan ulang.", kurang);
+        printf("Total biaya (Promo Beli 4+ Diskon Rp15000): Rp %d\n", totalBiaya);
+    }
+    else
+    {
+        printf("Total biaya: Rp %d\n", totalBiaya);
+    }
 
+    // Looping do-while untuk memastikan uang yang dibayarkan cukup
+    do
+    {
         printf("\nMasukkan uang dibayarkan: Rp ");
         scanf("%d", &uangBayar);
-    }
+
+        if (uangBayar < totalBiaya)
+        {
+            kurang = totalBiaya - uangBayar;
+            printf("Error: Uang tidak cukup! Kurang Rp %d. Silahkan masukkan ulang.\n", kurang);
+        }
+    } while (uangBayar < totalBiaya);
 
     kembalian = uangBayar - totalBiaya;
 
